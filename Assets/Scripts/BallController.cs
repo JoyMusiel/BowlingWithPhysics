@@ -9,11 +9,11 @@ public class BallController : MonoBehaviour
     private bool isBallLaunched;
     void Start()
     {
-        // Grabbing a reference to RigidBody
+        // grabbing a reference to RigidBody
         ballRB = GetComponent<Rigidbody>();
 
-        // Add a listener to the OnSpacePressed event
-        // When the space key is pressed the
+        // add a listener to the OnSpacePressed event
+        // when the space key is pressed the
         // LaunchBall method will be called
         inputManager.OnSpacePressed.AddListener(LaunchBall);
     }
@@ -26,7 +26,6 @@ public class BallController : MonoBehaviour
         ballRB.AddForce(transform.forward * force, ForceMode.Impulse);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
