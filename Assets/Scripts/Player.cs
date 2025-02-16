@@ -18,9 +18,4 @@ public class Player : MonoBehaviour
         Vector3 moveDirection = new(direction.x, 0f, direction.y);
         rb.AddForce(speed * moveDirection);
     }
-
-    void Update()
-    {
-        
-    }
 }

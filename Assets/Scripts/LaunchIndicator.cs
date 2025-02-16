@@ -4,10 +4,6 @@ using UnityEngine;
 public class LaunchIndicator : MonoBehaviour
 {
     [SerializeField] private CinemachineCamera freeLookCamera;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {

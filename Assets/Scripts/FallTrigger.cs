@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,16 +13,5 @@ public class FallTrigger : MonoBehaviour
             OnPinFall?.Invoke();
             Debug.Log($"{gameObject.name} is fallen");
         }
-    }
-    
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
     }
 }
